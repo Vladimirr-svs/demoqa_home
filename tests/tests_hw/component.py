@@ -14,7 +14,7 @@ class Component:
 
     def get_text(self):
         element = self.find_element()
-        return str(element.text) if element else ""  # Возвращаем текст, если элемент найден, иначе пустую строку
+        return str(element.text) if element else ""
 
     def close_browser(self):
-        self.driver.quit()  # Закрывает браузер после теста
+        self.driver.quit()
